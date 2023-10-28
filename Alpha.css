@@ -1,0 +1,529 @@
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:  #f5f5f5;
+}
+#bar{
+    display: none;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    color: white;
+}
+#nav #left{
+    cursor: pointer;
+}
+#nav #left #h1{
+    font-size: 1.1rem;
+
+}
+#nav #left h1 span{
+    font-weight: 100;
+}
+#nav #right #list{
+    display: flex;
+    list-style-type: none;
+    /* gap: 2rem; */
+    /* align-items: center; */
+}
+#nav #right ul li{
+    font-size: 1.1rem;
+}
+#nav #right ul li button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid lightgrey;
+    font-size: 1rem;
+    cursor: pointer;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+#nav #right #list a{
+    font-size: 1.1rem;
+    padding: 5px 20px;
+}
+#drop{
+    position: relative;
+}
+#menu{
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    left: -70%;
+    width: 150%;
+    background-color: white;
+    display: none;
+}
+#nav #right #menu li{
+    color: black;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+#drop:hover #menu{
+    display: block;
+}
+#nav #right #menu li:hover{
+background-color: orange;
+color: white;
+}
+
+#subd{
+    position: relative;
+}
+#subm{
+    list-style-type: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: -10.5rem;
+    width: 100%;
+    display: none;
+}
+#subd:hover #subm{
+    display: block;
+}
+
+
+
+
+#alpha{
+    text-align: center;
+    color: white;
+    margin-top: 6rem;
+}
+#alpha h1{
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+#alpha p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+#alpha button{
+    width: 13%;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    color: gray;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#alpha #learn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+
+
+#intro{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 10rem;
+    color: gray;
+}
+#intro h1{
+    font-size: 2.2rem;
+}
+#intro p{
+    font-size: 1.3rem;
+    border-top: 1px solid #e5e5e5;
+    width: 65%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#intro img{
+   width: 100%;
+}
+
+
+#icon{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+}
+#icon section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+}
+#icon div{
+    width: 47%;
+    display: inline-block;
+    text-align: center;
+    padding: 3rem 0;
+    color: rgb(108, 104, 104);
+}
+#icon div p{
+    font-size: 1.1rem;
+}
+.fa-solid.fa-bolt-lightning{
+    color: white;
+    background-color: #e89980;
+    font-size: 2rem;
+    border-radius: 100%;
+    padding: 1.5rem 2rem;
+}
+.fa-solid.fa-chart-area{
+    color: white;
+    background-color: #7fcdb8;
+    font-size: 2rem;
+    border-radius: 100%;
+    padding: 1.5rem 2rem; 
+}
+.fa-solid.fa-cloud{
+    color: white;
+    background-color:#90b0ba;
+    font-size: 2rem;
+    border-radius: 100%;
+    padding: 1.7rem 1.7rem;
+}
+.fa-solid.fa-lock{
+    color: white;
+    background-color: #e5cb95;
+    font-size: 2rem;
+    border-radius: 100%;
+    padding: 1.5rem 2rem;
+}
+
+#div1{
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top: 6.5px;
+    left: 3.5px;
+}
+#div4{
+    border-top: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+}
+
+
+#image{
+    width: 70%;
+    margin: auto;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+#image div{
+    width: 48%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: rgb(108, 104, 104);
+    border-radius: 6px;
+}
+ #image div img{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    /* or */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+ }
+#image h1{
+    font-size: 2rem;
+    line-height: 1.5em
+}
+#image p{
+    font-size: 1.1rem;
+}
+#image button{
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    border-radius: 6px;
+    color: #5c6168;
+    width: 9rem;
+    height: 3.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+#signup{
+    color: #f8e4dc;
+    background-color: #e89980;
+    text-align: center;
+    padding: 3.7rem 0 4.2rem 0;
+}
+#signup h3{
+    font-size: 2.3rem;
+    margin: 0;
+}
+#signup p{
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 1.5rem;
+}
+#signup input{
+    
+    width: 18%;
+    height: 3.3rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #eba893;
+    border: none;
+    padding: 0px 1rem;
+    font-size: 1rem;
+}
+#signup input::placeholder{
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+#signup button{
+    width: 8rem;
+    height: 3.3rem;
+    background-color: white;
+    color: #f1af8c;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+#social{
+    padding: 4rem 2rem;
+    margin: 0;
+}
+#social #sym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    color: #c6c6c6;
+}
+#social #sym i{
+    cursor: pointer;
+}
+#social #p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #919191;
+}
+#social div #a{
+    border-right: 1px solid lightgray;
+}
+/* -------Mobile------- */
+@media(max-width:600px){
+    #bar{
+            display: inline-block;
+            color: white;
+            background-color: #bfc2c6ae;
+            padding: 3px 15px;
+            border-radius: 6px;
+            position: fixed;
+            top: 5px;
+            left: 5px;
+    }
+
+    #navpopup{
+        width: 73%;
+        background-color: #2b2b2b;
+        height: 100%;
+        transition: transform 1s ease;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+    }
+    #navpopup div a{
+        display: block;
+        height: 3rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 0.5px solid #494a47;
+    }
+    #navpopup div a span{
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding-left: 1rem;
+    }
+    .firtsop{
+        padding-left: 2rem;
+    }
+    .secop{
+        padding-left: 3rem;
+    }
+
+    #nav{
+        display: none;
+    }
+    body{
+        background-size: 190%;
+        background-position-x: center;
+    }
+
+    #alpha{
+        width: 80%;
+        margin: auto;
+        margin-top:0rem;
+    }
+    #alpha h1{
+        font-size: 2rem;
+    }
+    #alpha p{
+        font-size: 1.15rem;
+    }
+    #alpha button{
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+
+    #intro{
+        width: 100%;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+    #intro h1{
+        font-size: 1.5rem;
+    }
+    #intro p{
+        width: 80%;
+        margin: auto;
+    }
+
+
+    
+#icon{
+    width:100%;
+    margin-top: 1rem;
+}
+#icon section{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    width: 90%;
+    margin: auto;
+}
+#icon div{
+    width: 100%;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+#icon div h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#icon div p{
+    font-size: 1.1rem;
+}
+#div1{
+    border-right: none;
+    border-bottom: none;
+    position: unset;
+}
+#div4{
+    border: none;
+}
+
+
+
+
+    #image{
+        display: block;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    #image div{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #image #ulta{
+        margin-bottom: 2rem;
+    }
+    #image div img{
+        border-radius: none;
+    }
+    #image h3{
+        font-size: 1.5rem;
+    }
+    #image p{
+        font-size: 1rem;
+    }
+    #image button{
+        width: 90%;
+        height: 3.1rem;
+        font-size: 1rem;
+    }
+
+
+
+    #signup{
+        padding: 2.5rem 0;
+    }
+    #signup h3{
+        font-size: 1.5rem;
+    }
+    #signup p{
+        font-size: 0.9rem;
+    }
+    #signup input{
+        width: 85%;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+    #signup input::placeholder{
+        font-size: 0.9rem;
+    }
+    #signup button{
+        width: 92%;
+        height: 3rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin-right: 1.5rem;
+    }
+
+
+    #social #p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: #919191;
+    }
+    #social #sym i{
+        font-size: 1.5rem;
+    }
+
+    
+}
