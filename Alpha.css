@@ -386,6 +386,7 @@ color: white;
     body{
         background-size: 190%;
         background-position-x: center;
+        width: 126%;
     }
 
     #alpha{
